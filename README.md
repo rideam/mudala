@@ -1,4 +1,4 @@
-# Project-Carbon
+# Mudala
 
 A carbon-credit marketplace powered by the Ethereum blockchain
 
@@ -27,6 +27,45 @@ Install project dependencies
 npm install
 cd client 
 npm install
+```
+
+
+create a `dbconfig.json` file within the root folder of the project and populate it with the following configuration, replacing blank details with your own.
+
+```json
+{
+  "development": {
+    "username": "",
+    "password": "",
+    "database": "",
+    "host": "",
+    "dialect": "",
+    "logging": true
+  },
+  "test": {
+    "username": "",
+    "password": "",
+    "database": "",
+    "host": "",
+    "dialect": "",
+    "logging": true
+  },
+  "production": {
+    "username": "",
+    "password": "",
+    "database": "",
+    "host": "",
+    "dialect": "",
+    "logging": false
+  }
+}
+```
+
+in the `client` folder create an `.env.local` environment variable file and populate with the following:
+
+``` 
+VUE_APP_VENDOR_CONTRACT_ADDRESS=<place address of deployed vendor contract here>
+VUE_APP_TOKEN_CONTRACT_ADDRESS=<place address of deployed token contract here>
 ```
 
 ## Starting the elements at once
